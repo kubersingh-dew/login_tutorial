@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login_tutorial/login/services/AuthService.dart';
 import 'package:login_tutorial/login/views/BottomContainer.dart';
 import 'package:login_tutorial/login/views/ButtonView.dart';
 import 'package:login_tutorial/utils/Extensions.dart';
@@ -50,7 +51,7 @@ class LoginBaseViewState extends State implements OnPressEvent{
     } else if (eventCode == registerEvent) {
         NavigationManager.navigateToRegistrationPage(context);
     } else if (eventCode == googleEvent) {
-
+      AuthService().googleSignInTask();
     }
   }
 
