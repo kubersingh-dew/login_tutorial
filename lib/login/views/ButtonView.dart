@@ -37,7 +37,7 @@ class ButtonView extends StatelessWidget {
             backgroundColor: (bgcolor!=null)?bgcolor:Colors.transparent,
             shape: const StadiumBorder(),
             side: BorderSide(color: bgcolor ?? Colors.white),
-          ),
+            ),
             child: Container(
               margin: const EdgeInsets.only(top: 15, bottom: 15, right: 2),
               child:Stack(
