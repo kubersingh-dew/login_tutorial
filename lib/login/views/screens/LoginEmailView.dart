@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:login_tutorial/login/views/EditTextView.dart';
+import 'package:login_tutorial/login/views/widgets/EditTextView.dart';
 import 'package:login_tutorial/utils/Utils.dart';
-import '../../utils/NavigationManager.dart';
-import 'BottomContainer.dart';
-import 'ButtonView.dart';
-import 'HeaderContainer.dart';
+import '../../../utils/NavigationManager.dart';
+import '../widgets/BottomContainer.dart';
+import '../widgets/ButtonView.dart';
+import '../widgets/HeaderContainer.dart';
 
 class LoginEmailView extends StatefulWidget {
   const LoginEmailView({super.key});
