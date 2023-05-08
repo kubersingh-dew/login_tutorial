@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../assignment_second/PayScreen.dart';
 import '../login/LoginScreen.dart';
 
 class NavigationManager {
@@ -21,6 +22,13 @@ class NavigationManager {
     Navigator.push(
       context,
       MaterialPageRoute(builder: (context) => const LoginScreen(screenType: 3)),
+    );
+  }
+
+  static void navigateToAssignSecond(BuildContext cx) {
+    Navigator.push(
+      cx,
+      MaterialPageRoute(builder: (context) => const PayScreen()),
     );
   }
 

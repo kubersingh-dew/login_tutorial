@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:login_tutorial/login/views/screens/LoginBaseView.dart';
-import 'package:login_tutorial/login/views/screens/LoginEmailView.dart';
-import 'package:login_tutorial/login/views/screens/LoginRegisterView.dart';
+
+import 'views/screens/LoginBaseView.dart';
+import 'views/screens/LoginEmailView.dart';
+import 'views/screens/LoginRegisterView.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key , required this.screenType});

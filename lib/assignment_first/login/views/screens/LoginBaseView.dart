@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:login_tutorial/login/services/AuthService.dart';
-import 'package:login_tutorial/login/views/widgets/BottomContainer.dart';
-import 'package:login_tutorial/login/views/widgets/ButtonView.dart';
-import 'package:login_tutorial/login/views/widgets/HeaderContainer.dart';
-import 'package:login_tutorial/utils/Extensions.dart';
-import 'package:login_tutorial/utils/NavigationManager.dart';
-import 'package:login_tutorial/utils/Utils.dart';
+import 'package:login_tutorial/assignment_first/utils/Extensions.dart';
+
+import '../../../utils/NavigationManager.dart';
+import '../../services/AuthService.dart';
+import '../widgets/BottomContainer.dart';
+import '../widgets/ButtonView.dart';
+import '../widgets/HeaderContainer.dart';
 
 class LoginBaseView extends StatefulWidget {
   const LoginBaseView({super.key});

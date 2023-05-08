@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:login_tutorial/login/views/widgets/DateTextView.dart';
-import 'package:login_tutorial/login/views/widgets/DropDownView.dart';
-import 'package:login_tutorial/login/views/widgets/HeaderContainer.dart';
-
 import '../../../utils/NavigationManager.dart';
 import '../../../utils/Utils.dart';
 import '../widgets/BottomContainer.dart';
 import '../widgets/ButtonView.dart';
+import '../widgets/DateTextView.dart';
+import '../widgets/DropDownView.dart';
 import '../widgets/EditTextView.dart';
+import '../widgets/HeaderContainer.dart';
 
 
 class LoginRegisterView extends StatefulWidget {
