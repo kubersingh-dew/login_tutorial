@@ -263,7 +263,8 @@ class PayScreenState extends State<PayScreen> {
               child: InkWell (
                 onTap: () {
                   if (isBottomSheet) {
-                    //updatePeopleList(item);
+                    Navigator.pop(context);
+                    showPeopleList();
                     setState(() {
                       item["isAdded"] = !item["isAdded"];
                     });
@@ -285,7 +286,7 @@ class PayScreenState extends State<PayScreen> {
                 ),
             ),
             Visibility(
-              visible: isBottomSheet ? item["isAdded"] :false,
+              visible: isBottomSheet ? (item["isAdded"]?true:false) : false,
               child: Positioned(
                 bottom: 7,
                 left: -7,
