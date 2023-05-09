@@ -61,7 +61,7 @@ class PayScreenState extends State<PayScreen> {
                     getTopRow(),
                     const Padding(padding: EdgeInsets.only(top: 10)),
                     Text(currFormat.format(amount.toDouble() / getRate()),
-                      style: const TextStyle(color: Colors.black, fontSize: 50, fontWeight: FontWeight.bold),),
+                      style: const TextStyle(color: Colors.black, fontSize: 45, fontWeight: FontWeight.bold),),
                     getCurrencyDropDown(),
                     const Padding(padding: EdgeInsets.only(top: 50)),
                     const Text('Here are some things you can do',
@@ -104,7 +104,8 @@ class PayScreenState extends State<PayScreen> {
   Widget getCurrencyDropDown() {
     if (curr.isNotEmpty) {
       return DropdownButton(
-        value: curr[0],
+        underline: const SizedBox(),
+        value: selectedValue ?? curr[0],
         items: curr.map((value) =>
             DropdownMenuItem(
               value: value,
@@ -128,15 +129,14 @@ class PayScreenState extends State<PayScreen> {
             ),
         ).toList(),
         onChanged: (value) {
-          if (value == null) return;
           setState(() {
             selectedValue = value;
           });
         },
         dropdownColor: Colors.white,
         icon: const Icon(
-          Icons.arrow_drop_down,
-          color: Colors.black, // <-- SEE HERE
+          Icons.keyboard_arrow_down,
+          color: Colors.black54,
         ),
       );
     } else {
@@ -164,8 +164,8 @@ class PayScreenState extends State<PayScreen> {
           physics: const ScrollPhysics(),
             padding: const EdgeInsets.only(top: 20),
             crossAxisCount: 2,
-            crossAxisSpacing: 20.0,
-            mainAxisSpacing: 20.0,
+            crossAxisSpacing: 15.0,
+            mainAxisSpacing: 15.0,
             childAspectRatio: 1.1,
             children: List.generate(paymentOption.length, (index) {
               return Center(
@@ -174,7 +174,7 @@ class PayScreenState extends State<PayScreen> {
                       borderRadius: BorderRadius.circular(15),
                       color: paymentOption[index]["bgcolor"].toString().toColor(),
                     ),
-                    padding: const EdgeInsets.all(15),
+                    padding: const EdgeInsets.all(10),
                     child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -182,7 +182,7 @@ class PayScreenState extends State<PayScreen> {
                           Icon(getIcon(paymentOption[index]["id"])),
                           Text(paymentOption[index]["title"], style: const TextStyle(
                               color: Colors.black,
-                              fontSize: 18,
+                              fontSize: 17,
                               fontWeight: FontWeight.bold)),
                           Text(paymentOption[index]["description"],
                               style: const TextStyle(color: Colors.black54,
