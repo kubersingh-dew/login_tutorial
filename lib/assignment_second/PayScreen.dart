@@ -63,7 +63,7 @@ class PayScreenState extends State<PayScreen> {
                     Text(currFormat.format(amount.toDouble() / getRate()),
                       style: const TextStyle(color: Colors.black, fontSize: 45, fontWeight: FontWeight.bold),),
                     getCurrencyDropDown(),
-                    const Padding(padding: EdgeInsets.only(top: 50)),
+                    const Padding(padding: EdgeInsets.only(top: 40)),
                     const Text('Here are some things you can do',
                       style: TextStyle(color: Colors.black54, fontSize: 20),),
                     getPaymentGrid(),
