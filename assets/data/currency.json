@@ -1,0 +1,20 @@
+[
+  {
+    "id": "123",
+    "title": "INR",
+    "rate": 1.0,
+    "flag": "https://cdn.countryflags.com/thumbs/india/flag-square-500.png"
+  },
+  {
+    "id": "124",
+    "title": "JPY",
+    "rate": 1.65,
+    "flag": "https://www.worldatlas.com/r/w960-q80/img/flag/jp-flag.jpg"
+  },
+  {
+    "id": "124",
+    "title": "GHS",
+    "rate": 0.14,
+    "flag": "https://cdn.britannica.com/54/5054-050-8EC06097/Flag-Ghana.jpg"
+  }
+]

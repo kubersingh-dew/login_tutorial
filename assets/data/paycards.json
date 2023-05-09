@@ -1,0 +1,30 @@
+[
+  {
+    "id": "123",
+    "icon": "",
+    "title": "Pay someone",
+    "description": "To wallet, bank or mobile no",
+    "bgcolor": "#f5f5fe"
+  },
+  {
+    "id": "124",
+    "icon": "",
+    "title": "Request money",
+    "description": "Request money from OroboPay users",
+    "bgcolor": "#dae9da"
+  },
+  {
+    "id": "125",
+    "icon": "",
+    "title": "Buy airtime",
+    "description": "Top-up or send airtime across Africa",
+    "bgcolor": "#fffaf0"
+  },
+  {
+    "id": "126",
+    "icon": "",
+    "title": "Pay bill",
+    "description": "Zero transaction fees when you pay",
+    "bgcolor": "#f3f4f6"
+  }
+]

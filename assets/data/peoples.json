@@ -1,0 +1,35 @@
+[
+  {
+    "id": 0,
+    "name": "Add",
+    "isAdded": true
+  },
+  {
+    "id": 230,
+    "name": "Batman",
+    "isAdded": true,
+    "img": "https://media-cldnry.s-nbcnews.com/image/upload/t_fit-560w,f_auto,q_auto:eco,dpr_2.0/streams/2012/June/120627/434085-111228-dark-knight-rises.jpg",
+    "flag": "https://cdn.countryflags.com/thumbs/india/flag-square-500.png"
+  },
+  {
+    "id": 231,
+    "name": "Superman",
+    "isAdded": false,
+    "img": "https://www.sopitas.com/wp-content/uploads/2021/03/superman-reboot-jj-abrams-ta-nehesi-coates-warner-dc-2.jpg",
+    "flag": "https://cdn.countryflags.com/thumbs/india/flag-square-500.png"
+  },
+  {
+    "id": 233,
+    "name": "Ironman",
+    "isAdded": true,
+    "img": "https://www.comingsoon.net/wp-content/uploads/sites/3/2015/02/iron-man-aou-poster.jpg",
+    "flag": "https://cdn.britannica.com/25/4825-004-F1975B92/Flag-United-Kingdom.jpg"
+  },
+  {
+    "id": 234,
+    "name": "Spiderman",
+    "isAdded": false,
+    "img": "https://images.hindustantimes.com/rf/image_size_630x354/HT/p2/2020/05/12/Pictures/_4c4e601e-9425-11ea-9070-932bbf5d90a5.jpg",
+    "flag": "https://cdn.britannica.com/33/4833-004-828A9A84/Flag-United-States-of-America.jpg"
+  }
+]
