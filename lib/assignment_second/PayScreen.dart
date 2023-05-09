@@ -69,7 +69,6 @@ class PayScreenState extends State<PayScreen> {
                     getPaymentGrid(),
                     const Text('Your favourites people',
                       style: TextStyle(color: Colors.black54, fontSize: 20),),
-                    const Padding(padding: EdgeInsets.only(top: 50)),
                     getPeopleGrid(false)
                   ]
               ),
@@ -160,9 +159,10 @@ class PayScreenState extends State<PayScreen> {
   Widget getPaymentGrid() {
     if (paymentOption.isNotEmpty) {
       return SizedBox (
-        height: 430,
+        height: 390,
         child: GridView.count(
           physics: const ScrollPhysics(),
+            padding: const EdgeInsets.only(top: 20),
             crossAxisCount: 2,
             crossAxisSpacing: 20.0,
             mainAxisSpacing: 20.0,
@@ -206,8 +206,9 @@ class PayScreenState extends State<PayScreen> {
       people.where((o) => o["id"]!=0).toList() :
       people.where((o) => o["isAdded"]).toList();
       return SizedBox(
-        height: 110,
+        height: 130,
         child: GridView.count(
+            padding: const EdgeInsets.only(top: 20),
             scrollDirection: Axis.horizontal,
             crossAxisCount: 1,
             crossAxisSpacing: 4.0,
