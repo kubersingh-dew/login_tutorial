@@ -21,6 +21,7 @@ class PayScreenState extends State<PayScreen> {
   int amount = 2350;
   double currRate = 1.0;
   var selectedValue;
+  bool showCustomSheet = false;
 
   Future<void> readJson() async {
     final String response = await rootBundle.loadString('assets/data/currency.json');
@@ -51,28 +52,33 @@ class PayScreenState extends State<PayScreen> {
           constraints: const BoxConstraints.expand(
               width:double.infinity,height: double.infinity),
           color: Colors.white70,
-          child: SingleChildScrollView (
-            child: Padding (
-              padding: const EdgeInsets.fromLTRB(20, 70, 20, 20),
-              child: Column(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    getTopRow(),
-                    const Padding(padding: EdgeInsets.only(top: 10)),
-                    Text(currFormat.format(amount.toDouble() / getRate()),
-                      style: const TextStyle(color: Colors.black, fontSize: 45, fontWeight: FontWeight.bold),),
-                    getCurrencyDropDown(),
-                    const Padding(padding: EdgeInsets.only(top: 40)),
-                    const Text('Here are some things you can do',
-                      style: TextStyle(color: Colors.black54, fontSize: 20),),
-                    getPaymentGrid(),
-                    const Text('Your favourites people',
-                      style: TextStyle(color: Colors.black54, fontSize: 20),),
-                    getPeopleGrid(false)
-                  ]
+          child: Stack(
+            children: [
+              SingleChildScrollView (
+                  child: Padding (
+                    padding: const EdgeInsets.fromLTRB(20, 70, 20, 20),
+                    child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          getTopRow(),
+                          const Padding(padding: EdgeInsets.only(top: 10)),
+                          Text(currFormat.format(amount.toDouble() / getRate()),
+                            style: const TextStyle(color: Colors.black, fontSize: 45, fontWeight: FontWeight.bold),),
+                          getCurrencyDropDown(),
+                          const Padding(padding: EdgeInsets.only(top: 40)),
+                          const Text('Here are some things you can do',
+                            style: TextStyle(color: Colors.black54, fontSize: 20),),
+                          getPaymentGrid(),
+                          const Text('Your favourites people',
+                            style: TextStyle(color: Colors.black54, fontSize: 20),),
+                          getPeopleGrid(false)
+                        ]
+                    ),
+                  )
               ),
-            )
+              makeCustomSelectionSheet()
+            ],
           )
         )
     );
@@ -238,7 +244,11 @@ class PayScreenState extends State<PayScreen> {
           child: IconButton(
             iconSize: 40,
             icon: const Icon(Icons.add, color: Colors.grey,),
-            onPressed: () { showPeopleList();  },
+            onPressed: () {
+                setState(() {
+                  showCustomSheet = !showCustomSheet;
+                });
+              },
           )
         ),
         const SizedBox(height: 10,),
@@ -263,8 +273,6 @@ class PayScreenState extends State<PayScreen> {
               child: InkWell (
                 onTap: () {
                   if (isBottomSheet) {
-                    Navigator.pop(context);
-                    showPeopleList();
                     setState(() {
                       item["isAdded"] = !item["isAdded"];
                     });
@@ -318,6 +326,55 @@ class PayScreenState extends State<PayScreen> {
           ),
         );
       },
+    );
+  }
+
+  Widget makeCustomSelectionSheet() {
+    return Visibility(
+      visible: showCustomSheet,
+      child : InkWell(
+        onTap: () {
+          setState(() {
+            showCustomSheet = !showCustomSheet;
+          });
+        },
+        child: Container(
+          alignment: AlignmentDirectional.bottomCenter,
+          width:double.infinity,
+          height: double.infinity,
+          color: Colors.black.withAlpha(150),
+          child: InkWell (
+            onTap: () {},
+            child: Stack (
+              clipBehavior: Clip.none,
+              children: [
+                Container(
+                  height: 165,
+                  color: Colors.white,
+                  child: getPeopleGrid(true),
+                ),
+                Positioned (
+                  bottom: 140,
+                  right: 10,
+                  child: CircleAvatar(
+                      radius: 25,
+                      backgroundColor: Colors.black,
+                      child: IconButton(
+                        iconSize: 20,
+                        icon: const Icon(Icons.close, color: Colors.white),
+                        onPressed: () {
+                          setState(() {
+                            showCustomSheet = !showCustomSheet;
+                          });
+                        },
+                      )
+                  ),
+                )
+              ],
+            ),
+          )
+        ),
+      )
     );
   }
 
