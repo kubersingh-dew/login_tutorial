@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login_tutorial/assignment_three/DashBoardScreen.dart';
 import '../../assignment_second/PayScreen.dart';
 import '../login/LoginScreen.dart';
 
@@ -29,6 +30,13 @@ class NavigationManager {
     Navigator.push(
       cx,
       MaterialPageRoute(builder: (context) => const PayScreen()),
+    );
+  }
+
+  static void navigateToAssignThree(BuildContext cx) {
+    Navigator.push(
+      cx,
+      MaterialPageRoute(builder: (context) => const DashBoardScreen()),
     );
   }
 

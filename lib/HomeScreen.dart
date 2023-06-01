@@ -7,6 +7,7 @@ class HomeScreen extends StatelessWidget implements OnPressEvent {
   HomeScreen({super.key});
   static const int assign1 = 208;
   static const int assign2 = 209;
+  static const int assign3 = 210;
   late BuildContext cx;
 
 
@@ -27,6 +28,9 @@ class HomeScreen extends StatelessWidget implements OnPressEvent {
                   const Padding(padding: EdgeInsets.only(top: 20)),
                   ButtonView(text: "Assignment 2",event: this, eventCode: assign2,
                     bgcolor: Colors.white, textColor: Colors.black,),
+                  const Padding(padding: EdgeInsets.only(top: 20)),
+                  ButtonView(text: "Assignment 3",event: this, eventCode: assign3,
+                    bgcolor: Colors.white, textColor: Colors.black,),
                 ]
             )
         )
@@ -37,8 +41,10 @@ class HomeScreen extends StatelessWidget implements OnPressEvent {
   void onCLick(int eventCode) {
     if (eventCode == assign1) {
       NavigationManager.navigateToBasePage(cx);
-    } else {
+    } else if (eventCode == assign2) {
       NavigationManager.navigateToAssignSecond(cx);
+    } else if (eventCode == assign3) {
+      NavigationManager.navigateToAssignThree(cx);
     }
   }
 }

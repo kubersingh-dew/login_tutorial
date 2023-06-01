@@ -1,0 +1,198 @@
+{
+  "title": "Explore",
+  "components": [
+    {
+      "title": "",
+      "type": "roundedList",
+      "data": [
+        {
+          "img": "https://media.timeout.com/images/105938335/1920/1080/image.jpg",
+          "title": "Hotels",
+          "subTitle": ""
+        },
+        {
+          "img": "https://media.timeout.com/images/105938335/1920/1080/image.jpg",
+          "title": "Flights",
+          "subTitle": ""
+        },
+        {
+          "img": "https://media.timeout.com/images/105938335/1920/1080/image.jpg",
+          "title": "Activities",
+          "subTitle": ""
+        },
+        {
+          "img": "https://media.timeout.com/images/105938335/1920/1080/image.jpg",
+          "title": "Restaurants",
+          "subTitle": ""
+        },
+        {
+          "img": "https://media.timeout.com/images/105938335/1920/1080/image.jpg",
+          "title": "Locations",
+          "subTitle": ""
+        },
+        {
+          "img": "https://media.timeout.com/images/105938335/1920/1080/image.jpg",
+          "title": "Malls",
+          "subTitle": ""
+        }
+      ]
+    },
+    {
+      "title": "Search City",
+      "type": "searchView",
+      "data": []
+    },
+    {
+      "title": "",
+      "type": "stories",
+      "data": [
+        {
+          "img": "https://img.freepik.com/premium-photo/umbrella-chair-around-swimming-pool-hotel-resort-with-sunrise-morning-holiday-vacation-concept_1339-162589.jpg",
+          "contentImg": "https://blog.readyplayer.me/content/images/2021/04/IMG_0689.PNG",
+          "title": "",
+          "subTitle": ""
+        },
+        {
+          "img": "https://img.freepik.com/premium-photo/umbrella-chair-around-swimming-pool-hotel-resort-with-sunrise-morning-holiday-vacation-concept_1339-162589.jpg",
+          "contentImg": "https://blog.readyplayer.me/content/images/2021/04/IMG_0689.PNG",
+          "title": "",
+          "subTitle": ""
+        },
+        {
+          "img": "https://img.freepik.com/premium-photo/umbrella-chair-around-swimming-pool-hotel-resort-with-sunrise-morning-holiday-vacation-concept_1339-162589.jpg",
+          "contentImg": "https://blog.readyplayer.me/content/images/2021/04/IMG_0689.PNG",
+          "title": "",
+          "subTitle": ""
+        },
+        {
+          "img": "https://img.freepik.com/premium-photo/umbrella-chair-around-swimming-pool-hotel-resort-with-sunrise-morning-holiday-vacation-concept_1339-162589.jpg",
+          "contentImg": "https://blog.readyplayer.me/content/images/2021/04/IMG_0689.PNG",
+          "title": "",
+          "subTitle": ""
+        },
+        {
+          "img": "https://img.freepik.com/premium-photo/umbrella-chair-around-swimming-pool-hotel-resort-with-sunrise-morning-holiday-vacation-concept_1339-162589.jpg",
+          "contentImg": "https://blog.readyplayer.me/content/images/2021/04/IMG_0689.PNG",
+          "title": "",
+          "subTitle": ""
+        },
+        {
+          "img": "https://img.freepik.com/premium-photo/umbrella-chair-around-swimming-pool-hotel-resort-with-sunrise-morning-holiday-vacation-concept_1339-162589.jpg",
+          "contentImg": "https://blog.readyplayer.me/content/images/2021/04/IMG_0689.PNG",
+          "title": "",
+          "subTitle": ""
+        }
+      ]
+    },
+    {
+      "title": "Most Popular Now",
+      "type": "popularView",
+      "data": [
+        {
+          "img": "https://www.welcome-hotels.com/site/assets/files/35059/welcome_hotel_marburg_lobby_2k.2560x1600.jpg",
+          "title": "Palace of Culture and Science",
+          "subTitle": "Warsaw"
+        },
+        {
+          "img": "https://www.welcome-hotels.com/site/assets/files/35059/welcome_hotel_marburg_lobby_2k.2560x1600.jpg",
+          "title": "Second World War Museum",
+          "subTitle": "Gdansk"
+        },
+        {
+          "img": "https://www.welcome-hotels.com/site/assets/files/35059/welcome_hotel_marburg_lobby_2k.2560x1600.jpg",
+          "title": "Royal Castle",
+          "subTitle": "Warsaw"
+        },
+        {
+          "img": "https://www.welcome-hotels.com/site/assets/files/35059/welcome_hotel_marburg_lobby_2k.2560x1600.jpg",
+          "title": "Star Villa",
+          "subTitle": "St. Peter"
+        },
+        {
+          "img": "https://www.welcome-hotels.com/site/assets/files/35059/welcome_hotel_marburg_lobby_2k.2560x1600.jpg",
+          "title": "Tech Mall",
+          "subTitle": "Halo"
+        },
+        {
+          "img": "https://www.welcome-hotels.com/site/assets/files/35059/welcome_hotel_marburg_lobby_2k.2560x1600.jpg",
+          "title": "Royal Fort",
+          "subTitle": "Star City"
+        }
+      ]
+    },
+    {
+      "img":"https://i0.wp.com/digital-photography-school.com/wp-content/uploads/2022/12/cityscape-photos-examples-15.jpg",
+      "title": "Poland",
+      "subtitle": "A spellbinding cities where culture collide",
+      "type": "bannerView",
+      "data": [
+        {
+          "img": "https://pandotrip.com/wp-content/uploads/2018/06/Eiffel-Tower-Paris-France.jpg",
+          "title": "Warsaw",
+          "subTitle": ""
+        },
+        {
+          "img": "https://pandotrip.com/wp-content/uploads/2018/06/Eiffel-Tower-Paris-France.jpg",
+          "title": "Gdansk",
+          "subTitle": ""
+        },
+        {
+          "img": "https://pandotrip.com/wp-content/uploads/2018/06/Eiffel-Tower-Paris-France.jpg",
+          "title": "St. Peter",
+          "subTitle": ""
+        },
+        {
+          "img": "https://pandotrip.com/wp-content/uploads/2018/06/Eiffel-Tower-Paris-France.jpg",
+          "title": "Halo",
+          "subTitle": ""
+        },
+        {
+          "img": "https://pandotrip.com/wp-content/uploads/2018/06/Eiffel-Tower-Paris-France.jpg",
+          "title": "Star City",
+          "subTitle": ""
+        },
+        {
+          "img": "https://pandotrip.com/wp-content/uploads/2018/06/Eiffel-Tower-Paris-France.jpg",
+          "title": "DC",
+          "subTitle": ""
+        }
+      ]
+    },
+    {
+      "title": "Hotels",
+      "type": "hotelView",
+      "data": [
+        {
+          "img": "https://thumbs.dreamstime.com/b/hotel-bed-room-21064950.jpg",
+          "title": "Taj Hotel",
+          "subTitle": "Walo, Warsaw"
+        },
+        {
+          "img": "https://thumbs.dreamstime.com/b/hotel-bed-room-21064950.jpg",
+          "title": "St. Peter Hotel",
+          "subTitle": "Vndo, Gdansk"
+        },
+        {
+          "img": "https://thumbs.dreamstime.com/b/hotel-bed-room-21064950.jpg",
+          "title": "Star Hotel",
+          "subTitle": "Walo, Warsaw"
+        },
+        {
+          "img": "https://thumbs.dreamstime.com/b/hotel-bed-room-21064950.jpg",
+          "title": "Galaxy Hotel",
+          "subTitle": "Vndo, Gdansk"
+        },
+        {
+          "img": "https://thumbs.dreamstime.com/b/hotel-bed-room-21064950.jpg",
+          "title": "Fusion Hotel",
+          "subTitle": "Walo, Warsaw"
+        },
+        {
+          "img": "https://thumbs.dreamstime.com/b/hotel-bed-room-21064950.jpg",
+          "title": "RiverView Hotel",
+          "subTitle": "Vndo, Gdansk"
+        }
+      ]
+    }
+  ]
+}
